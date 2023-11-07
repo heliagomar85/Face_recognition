@@ -1,0 +1,352 @@
+.print-page-top {
+    display: block;
+    text-align: center;
+    margin: 20px 0px;
+}
+
+body {
+    background-color: #fff;
+}
+
+.button-grad {
+    background: #4a69bd;
+    background-image: -webkit-linear-gradient(top, #96c5bd, #00836c);
+    background-image: -moz-linear-gradient(top, #96c5bd, #00836c);
+    background-image: -ms-linear-gradient(top, #96c5bd, #00836c);
+    background-image: -o-linear-gradient(top, #96c5bd, #00836c);
+    background-image: linear-gradient(to bottom, #96c5bd, #00836c);
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    border-radius: 10px;
+    -webkit-box-shadow: 0px 3px 1px 1px #4c4c4c;
+    -moz-box-shadow: 0px 3px 1px 1px #4c4c4c;
+    box-shadow: 0px 3px 1px 1px #4c4c4c;
+}
+
+.button-grad-blue {
+    background-image: -webkit-linear-gradient(top, #db7049, #db7049);
+    background-image: -moz-linear-gradient(top, #db7049, #db7049);
+    background-image: -ms-linear-gradient(top, #db7049, #db7049);
+    background-image: -o-linear-gradient(top, #db7049, #db7049);
+    background-image: linear-gradient(to bottom, #db7049, #db7049);
+
+}
+
+section.products, section.main {
+    position: relative;
+}
+
+.notice, #wpfooter, .a11y-speak-intro-text, .a11y-speak-region {
+    display: none;
+}
+
+.list-hero-img {
+    max-width: 100%;
+    padding: 25px 0 25px 0px;
+    text-align: center;
+    display: none;
+}
+
+.list-hero-img img {
+    width: auto;
+}
+
+.before-cat-text {
+    margin-bottom: 40px;
+    page-break-before: always;
+}
+
+.before-cat-text i {
+    color: orange;
+    display: inline-block;
+}
+
+.before-cat-text p {
+    font-weight: bold;
+    font-size: 15px;
+}
+
+.before-cat-text p img {
+    margin-bottom: -20px;
+}
+
+.cats-table {
+    margin-bottom: 30px;
+}
+
+/* .cats-table {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 1fr;
+    grid-gap: 5px;
+    margin: 0;
+} */
+.cats-table > div {
+    overflow: hidden;
+    position: relative;
+    padding-right: 20px;
+    counter-increment: css-counter 1;
+    width: calc(33% - 23px);
+    display: inline-block;
+    max-height: 41px;
+    overflow: hidden;
+}
+
+.cats-table > div:nth-child(even) {
+    background: #1e3799;
+    background-image: -webkit-linear-gradient(top, #db7049, #db7049);
+    background-image: -moz-linear-gradient(top, #db7049, #db7049);
+    background-image: -ms-linear-gradient(top, #db7049, #db7049);
+    background-image: -o-linear-gradient(top, #db7049, #db7049);
+    background-image: linear-gradient(to bottom, #db7049, #db7049);
+}
+
+.cats-table > div > a {
+    color: white;
+    font-size: 16px;
+    width: 95%;
+    display: block;
+    padding: 12px;
+}
+
+.cats-table > div:before {
+    content: counter(css-counter) " - ";
+    display: block;
+    margin-top: 14px;
+    right: 10px;
+    font-size: 15px;
+    font-weight: bold;
+    float: right;
+    padding-left: 10px;
+    color: white;
+}
+
+.back-to-top {
+    position: absolute;
+    top: -40px;
+    left: 0;
+}
+
+.back-to-top a {
+    padding: 10px 15px;
+    color: white;
+}
+
+.table-wrap {
+    position: relative;
+}
+
+.table-wrap h1 {
+    text-align: center;
+    margin-bottom: -50px;
+    page-break-before: always;
+}
+
+.products-table {
+    border-collapse: collapse;
+    width: 100%;
+    border: 1px solid black;
+    margin: 70px 0;
+}
+
+.products-table .table-head {
+    height: 100px;
+}
+
+.products-table .table-head th {
+    background-color: #037864;
+    color: white;
+    font-size: 18px;
+    border: 1px solid white;
+    border-top-color: black;
+    border-bottom-color: black;
+}
+
+.products-table .table-head th.table-th-num {
+    border-right-color: black;
+    border-right-width: 1px;
+
+}
+
+.products-table .table-head th.table-th-image {
+    border-left-color: black;
+    border-left-width: 1px;
+}
+
+.products-table .table-head th.table-th-box-quantity {
+    font-size: 15px;
+    max-width: 40px;
+}
+
+.products-table .table-head th.table-th-guarantee span {
+    display: block;
+}
+
+.products-table tr td.list-cat {
+    background: #db7049;
+    height: 45px;
+    border-width: 0;
+}
+
+.products-table tr td.list-cat > a {
+    color: white;
+}
+
+.products-table tr td {
+    border: 1px solid black;
+}
+
+.products-table tr td, .products-table tr td a {
+    text-align: center;
+    font-size: 17px;
+    font-weight: bold;
+}
+
+.products-table tr td.table-num {
+    text-align: center;
+}
+
+.products-table tr td.table-name {
+    /* max-width: 150px; */
+}
+
+.products-table tr td.table-name h3 {
+    font-size: 17px;
+}
+
+.products-table tr td.table-name a {
+    color: black;
+    line-height: 30px;
+}
+
+.products-table tr:nth-child(even) {
+    background-color: #d9d9d9;
+}
+
+.products-table tr td:first-child, .products-table tr th:first-child {
+    max-width: 25px;
+    font-size: 14px;
+}
+
+.products-table tr td.table-guarantee {
+    max-width: 100px;
+
+}
+
+.products-table tr td.table-guarantee > span {
+    display: block;
+}
+
+.products-table tr td.table-image {
+    background: #fff !important;
+    width: 160px;
+}
+
+.products-table tr td.table-image > img {
+    margin: auto;
+    display: block;
+    height: 150px;
+}
+
+
+@media print {
+    body * {
+        font-family: Calibri, Arial !important;
+    }
+
+    html.wp-toolbar {
+        padding: 0;
+        margin: 0;
+    }
+
+    .print-hide, .clear {
+        display: none !important;
+    }
+
+    @page {
+        margin: 20px 10px;
+        -webkit-print-color-adjust: exact;
+        background-color: white;
+    }
+
+    footer {
+        display: none;
+        position: fixed;
+        bottom: 0;
+    }
+
+    header {
+        display: none;
+        position: fixed;
+        top: 0;
+    }
+
+    .list-hero-img {
+        padding: 0;
+        margin: 0;
+        height: 93vh;
+        display: block;
+    }
+
+    .list-hero-img img {
+        height: 100%;
+        width: auto;
+        max-width: 100%;
+    }
+
+    .cats-table {
+        position: relative;
+    }
+
+    .cats-table > div {
+        page-break-inside: avoid;
+        position: relative;
+    }
+
+    .back-to-top {
+    }
+
+    table {
+        margin-top: 50px;
+        width: 100%;
+    }
+
+    tr {
+        page-break-inside: auto;
+        page-break-after: auto
+    }
+
+    thead {
+        display: table-header-group;
+    }
+
+    table th {
+        padding: 15px 5px;
+        font-size: 15px;
+    }
+
+    table tr {
+        border-bottom: 1px solid black;
+    }
+
+    table td.table-sku {
+        padding: 0 5px;
+    }
+
+    #wpadminbar, #adminmenumain {
+        display: none !important;
+    }
+
+    #wpcontent {
+        margin: 0;
+        padding: 0;
+    }
+
+    .list-hero-img.end-image {
+        page-break-after: avoid;
+    }
+
+    section.products {
+        page-break-before: always;
+    }
+}
